@@ -70,13 +70,13 @@ int main() {
     superPoder2 = (float) (populacao2 + area2 + PIB2 + pontosTuristicos2 + PIBperCapita2 + 1/densidade2);
 
     //Exibir os Resultados com Comparações
-    printf("População: %s (%lu)\n", (populacao1 > populacao2) ? "Carta 1 venceu" : "Carta 2 venceu", (populacao1 > populacao2) ? 1 : 0);
+    /*printf("População: %s (%lu)\n", (populacao1 > populacao2) ? "Carta 1 venceu" : "Carta 2 venceu", (populacao1 > populacao2) ? 1 : 0);
     printf("Área: %s (%.0f)\n", (area1 > area2) ? "Carta 1 venceu" : "Carta 2 venceu", (area1 > area2) ? 1 : 0);
     printf("PIB: %s (%.0f)\n", (PIB1 > PIB2) ? "Carta 1 venceu" : "Carta 2 venceu", (PIB1 > PIB2) ? 1 : 0);
     printf("Pontos Turísticos: %s (%d)\n", (pontosTuristicos1 > pontosTuristicos2) ? "Carta 1 venceu" : "Carta 2 venceu", (pontosTuristicos1 > pontosTuristicos2) ? 1 : 0);
     printf("Densidade Populacional: %s (%.0f)\n", (densidade1 < densidade2) ? "Carta 1 venceu" : "Carta 2 venceu", (densidade1 < densidade2) ? 1 : 0);
     printf("PIB per Capita: %s (%.0f)\n", (PIBperCapita1 > PIBperCapita2) ? "Carta 1 venceu" : "Carta 2 venceu", (PIBperCapita1 > PIBperCapita2) ? 1 : 0);
-    printf("Super Poder: %s (%.0f)\n", (superPoder1 > superPoder2) ? "Carta 1 venceu" : "Carta 2 venceu", (superPoder1 > superPoder2) ? 1 : 0);
+    printf("Super Poder: %s (%.0f)\n", (superPoder1 > superPoder2) ? "Carta 1 venceu" : "Carta 2 venceu", (superPoder1 > superPoder2) ? 1 : 0);*/
     
 
     //vamos imprimir os dados da Carta 1
@@ -99,6 +99,17 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per Capita: %.2f reais\n", PIBperCapita2);  */
+
+    //vamos comparar um atributo
+    if (populacao1 > populacao2) {
+        printf("Carta 1- %s: %lu\n", nome1, populacao1);
+        printf("Carta 2- %s: %lu\n", nome2, populacao2);
+        printf("Resultado: Carta 1 venceu! \n");
+    } else {
+        printf("Carta 1 %s: %lu\n", nome1, populacao1);
+        printf("Carta 2 %s: %lu\n", nome2, populacao2);
+        printf("Carta 2 venceu! \n");
+    }
 
     return 0;
 }
